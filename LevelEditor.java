@@ -107,9 +107,9 @@ public class LevelEditor extends MyDialog {
 	static Dimension HotSpot16x16 = Toolkit.getDefaultToolkit().getBestCursorSize(16,16);
 	static Dimension HotSpot12x1 = Toolkit.getDefaultToolkit().getBestCursorSize(12,1);
 
-	static Cursor CUR_No = Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Cursors" + ImageLoader.separator + "CursorNo.gif").getImage(), new Point(HotSpot16x16.width, HotSpot16x16.height), "No Cursor");
-	static Cursor CUR_Move = Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Cursors" + ImageLoader.separator + "CursorMove.gif").getImage(), new Point(HotSpot16x16.width, HotSpot16x16.height), "Move Cursor");
-	static Cursor CUR_Connect = Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Cursors" + ImageLoader.separator + "CursorHand.gif").getImage(), new Point(HotSpot12x1.width, HotSpot12x1.height), "Hand Cursor");
+	static Cursor CUR_No = Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Cursors" + ImageLoader.separator + "CursorNo.gif").getImage(), new Point(HotSpot16x16.width < 16 ? HotSpot16x16.width : 16, HotSpot16x16.height < 16 ? HotSpot16x16.height : 16), "No Cursor");
+	static Cursor CUR_Move = Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Cursors" + ImageLoader.separator + "CursorMove.gif").getImage(), new Point(HotSpot16x16.width < 16 ? HotSpot16x16.width : 16, HotSpot16x16.height < 16 ? HotSpot16x16.height : 16), "Move Cursor");
+	static Cursor CUR_Connect = Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Cursors" + ImageLoader.separator + "CursorHand.gif").getImage(), new Point(HotSpot12x1.width < 12 ? HotSpot12x1.width : 12, HotSpot12x1.height < 1 ? HotSpot16x16.height : 1), "Hand Cursor");
 	static Cursor CUR_Default = Cursor.getDefaultCursor();
 	
 	Game game;
