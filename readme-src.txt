@@ -52,12 +52,18 @@ After you finished compiling the sources with make.bat, you can run MulgEd by ty
   java -jar mulged.jar
 
 
-If you want to build the full release, run the pack.bat batch file.
+If you want to build the full release directory and ZIP file, run the pack.bat batch 
+file.
 pack.bat runs make.bat, and then copies only the files needed for the release, in a 
 sundirectory named Release.
 Then pack,bat ZIPs this directory to a file named MulgEdXX.zip (XX being the version)
 pack.bat outputs a log file, named packlog.txt. Consult this file if your packing
 didn't seem to work.
+
+The same thing can be accomplished for the source code.
+In order to pack the source code into a zip file, run pack-src.bat
+pack-src.bat copies all source files into a directory named Release-src, and then ZIPs
+it into a file called MulgEdXX-src.zip
 
 
 
