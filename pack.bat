@@ -40,14 +40,16 @@ deltree /Y Release >> packlog.txt
 echo Creating new Release...
 echo Creating new Release... >> packlog.txt
 md Release >> packlog.txt
-md Release\BwTiles >> packlog.txt
-md Release\ColTiles >> packlog.txt
+md Release\2BitTiles >> packlog.txt
+md Release\4BitTiles >> packlog.txt
+md Release\8BitTiles >> packlog.txt
 md Release\Cursors >> packlog.txt
 
 echo Copying new Release contents...
 echo Copying new Release contents... >> packlog.txt
-copy BwTiles\*.* Release\BwTiles >> packlog.txt
-copy ColTiles\*.* Release\ColTiles >> packlog.txt
+copy 2BitTiles\*.* Release\2BitTiles >> packlog.txt
+copy 4BitTiles\*.* Release\4BitTiles >> packlog.txt
+copy 8BitTiles\*.* Release\8BitTiles >> packlog.txt
 copy Cursors\*.* Release\Cursors >> packlog.txt
 
 copy COPYING.txt Release >> packlog.txt
@@ -61,5 +63,5 @@ copy "What's New.txt" Release >> packlog.txt
 echo Creating release ZIP package...
 echo Creating release ZIP package... >> packlog.txt
 cd Release >> packlog.txt
-jar cf ..\MulgEd22.zip *.* >> packlog.txt
+jar cf ..\MulgEd221.zip *.* >> packlog.txt
 cd ..
