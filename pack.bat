@@ -63,5 +63,5 @@ copy "What's New.txt" Release >> packlog.txt
 echo Creating release ZIP package...
 echo Creating release ZIP package... >> packlog.txt
 cd Release >> packlog.txt
-jar cf ..\MulgEd221.zip *.* >> packlog.txt
+jar cf ..\MulgEd221.zip *.* >> ../packlog.txt
 cd ..
