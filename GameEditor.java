@@ -192,13 +192,13 @@ public class GameEditor extends MyDialog {
 		m = new JMenu("Tiles");
 		m.setMnemonic(KeyEvent.VK_T);
 		bg = new ButtonGroup();
-		mi = new MyRadioButtonMenuItem(this,MSG_TILESBW,"Black & White", true, KeyEvent.VK_B);
+		mi = new MyRadioButtonMenuItem(this,MSG_TILESBW,"2-Bit Grayscale", true, KeyEvent.VK_B);
 		bg.add(mi);
 		m.add(mi);
-		mi = new MyRadioButtonMenuItem(this,MSG_TILESGRAYSCALE,"4bit GrayScale", false, KeyEvent.VK_4);
+		mi = new MyRadioButtonMenuItem(this,MSG_TILESGRAYSCALE,"4-Bit Grayscale", false, KeyEvent.VK_4);
 		bg.add(mi);
 		m.add(mi);
-		mi = new MyRadioButtonMenuItem(this,MSG_TILESCOLOR,"2bit GrayScale", false, KeyEvent.VK_2);
+		mi = new MyRadioButtonMenuItem(this,MSG_TILESCOLOR,"256 Colors", false, KeyEvent.VK_2);
 		bg.add(mi);
 		m.add(mi);
 		menubar.add(m);

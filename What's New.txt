@@ -21,6 +21,10 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 What's new in MulgEd ?
 ----------------------
 
+Version 2.21 (March 2003):
+- Fixed a problem with cursor dimensions in Windows
+- Fixed the tiles problem and added 4-bit grayscale tiles
+
 Version 2.2 (March 2003):
 - Released the sources under the terms of GNU General Public LIcense
 - Sources and binaries now avilable as OpenSource project on SourceForge.net

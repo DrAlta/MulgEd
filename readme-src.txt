@@ -18,7 +18,7 @@ along with MulgEd, in a file named COPYING; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 
-MulgEd 2.2 - source code release notes
+MulgEd 2.21 - source code release notes
 --------------------------------------
 
 Contents:
@@ -31,7 +31,7 @@ Contents:
 1. Compiling requirements
 -------------------------
 
-MulgEd 2.2 requires JDK 1.2.2 or later to compile.
+MulgEd 2.21 requires JDK 1.2.2 or later to compile.
 Please see http://java.sun.com/j2se/ for JDK download and install instructions.
 
 The JDK binaries (specifically javac and jar) should be in your PATH environment.

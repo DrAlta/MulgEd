@@ -18,12 +18,12 @@ along with MulgEd, in a file named COPYING; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 
-MulgEd 2.2 - release notes
+MulgEd 2.21 - release notes
 ---------------------------
 
 Contents:
   1. System requirements and Java explanations
-  2. Running MulgEd 2.2
+  2. Running MulgEd 2.21
   3. General changes from MulgEd 1.5j preview versions
   4. Some FAQs
   5. Bugs, comments, suggestions
@@ -32,7 +32,7 @@ Contents:
 1. System requirements and Java explanations:
 ---------------------------------------------
 
-MulgEd 2.2 was designed to run on all platforms that support the Java Virtua Machine
+MulgEd 2.21 was designed to run on all platforms that support the Java Virtua Machine
 	
 The java virtual machine runtime environment can be downloaded from sun's web site. It is
 available for a wide variety of platforms. Simply go to http://java.sun.com/jre and download
@@ -40,11 +40,11 @@ the latest version  of the JRE (And install it, of course). I recommend using JR
 Version 1.2.2 or later.
 
 If you are a java developer, and have already installed the JDK, you need not do any
-further preparations in order to run MulgEd 2.2. 
+further preparations in order to run MulgEd 2.21. 
 Of course you already know that, but i just had to say it ... ;)
 
 Note for Un*x-like OSs (linux, solaris, etc):
-  You must start MulgEd 2.2 when the X environment is running, otherwise you will get an 
+  You must start MulgEd 2.21 when the X environment is running, otherwise you will get an 
   error	about opening the display.
 	
 If you already have a JRE installed, and you get error messages about the javax.swing 
@@ -52,10 +52,10 @@ package, it is probably because you have a version that does not support the Swi
 interface. Download and install a more recent version of the JRE, and the problem is gone.
 	
 	
-2. Running MulgEd 2.2:
+2. Running MulgEd 2.21:
 -----------------------
 
-MulgEd 2.2 comes in a java archive (a JAR file), that contains all the code required to
+MulgEd 2.21 comes in a java archive (a JAR file), that contains all the code required to
 run it. Other files (mostly images) are outside the JAR file.
 
 If you have installed either JRE or JDK, run the following command:
@@ -69,8 +69,8 @@ double-clicking on the JAR file's icon.
 3. General changes from MulgEd 1.5j preview versions:
 ----------------------------------------------
 
-MulgEd 2.2 is totally different from the previous version 1.5j preview 1,2, and 3.
-The difference is that version 2.2 uses the new JFC user interface called Swing, that is 
+MulgEd 2.21 is totally different from the previous version 1.5j preview 1,2, and 3.
+The difference is that version 2.21 uses the new JFC user interface called Swing, that is 
 supported in Java 2 and is available for a lot of different computer platforms.
 Those three preview versions used the MS-JVM extentions to emulate a Windows environment
 and therefore were not compatible with other OSs. 

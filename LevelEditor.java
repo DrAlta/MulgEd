@@ -147,7 +147,7 @@ public class LevelEditor extends MyDialog {
 	BlackLabel sttDesc = new BlackLabel("",200,10);
 	MyRadioButton standardRadio = new MyRadioButton(this,MSG_STANDARD,"Standard",true,10,16);
 	MyRadioButton additionalRadio = new MyRadioButton(this,MSG_ADDITIONAL,"Additional",false,10,16);
-	MyRadioButton moreRadio = new MyRadioButton(this,MSG_STANDARD,"More",true,10,16);
+//	MyRadioButton moreRadio = new MyRadioButton(this,MSG_STANDARD,"More",true,10,16);
 	MyRadioButton grooveRadio = new MyRadioButton(this,MSG_GROOVE,"Groove / Rampart",false,10,16);
 	MyCanvas tileset = new MyCanvas(this, MSG_NULL, MSG_TILESET, MSG_NULL, MSG_NULL, 128,80);
 	MyCanvas currentTile = new MyCanvas(this, 32,32);
@@ -183,7 +183,7 @@ public class LevelEditor extends MyDialog {
 		setupComponents();
 		addComponents();
 		board = pic.getGraphics();
-		loadTileImages(parent,"BwTiles", ged.gauge, false);
+		loadTileImages(parent,"2BitTiles", ged.gauge, false);
 		scrollTimer = new Timer(100,false);
 		scrollTimer.setDialog(this, MSG_TIMERSCROLL);
 	}
@@ -193,7 +193,7 @@ public class LevelEditor extends MyDialog {
 		bg = new ButtonGroup();
 		bg.add(standardRadio);
 		bg.add(additionalRadio);
-		bg.add(moreRadio);
+//		bg.add(moreRadio);
 		bg.add(grooveRadio);
 		bg = new ButtonGroup();
 		bg.add(sizeRadio1);
@@ -270,9 +270,9 @@ public class LevelEditor extends MyDialog {
 		additionalRadio.setMnemonic(KeyEvent.VK_A);
 		gbl.setConstraints(additionalRadio,new GridBagConstraints(0,1,1,1,1,0,c.CENTER,c.BOTH,new Insets(1,1,1,1),0,0));
 		pnl.add(additionalRadio);
-		moreRadio.setMnemonic(KeyEvent.VK_O);
-		gbl.setConstraints(moreRadio,new GridBagConstraints(0,2,1,1,1,0,c.CENTER,c.BOTH,new Insets(1,1,1,1),0,0));
-		pnl.add(moreRadio);
+//		moreRadio.setMnemonic(KeyEvent.VK_O);
+//		gbl.setConstraints(moreRadio,new GridBagConstraints(0,2,1,1,1,0,c.CENTER,c.BOTH,new Insets(1,1,1,1),0,0));
+//		pnl.add(moreRadio);
 		grooveRadio.setMnemonic(KeyEvent.VK_G);
 		gbl.setConstraints(grooveRadio,new GridBagConstraints(0,3,1,1,1,0,c.CENTER,c.BOTH,new Insets(1,1,1,1),0,0));
 		pnl.add(grooveRadio);

@@ -66,7 +66,7 @@ public class About extends MyDialog {
 		layout.setConstraints(icon,new GridBagConstraints(0,0,1,3,0,0,c.CENTER,c.NONE,new Insets(1,10,1,10),0,0));
 		paneadd(icon);
 		// Add the labels.
-		l = new BlackLabel("MulgEd version 2.2, Copyright (C) Ilan Tayary, 1999 - 2003");
+		l = new BlackLabel("MulgEd version 2.21, Copyright (C) Ilan Tayary, 1999 - 2003");
 		layout.setConstraints(l,new GridBagConstraints(1,0,1,1,1,0,c.WEST,c.NONE,new Insets(1,1,1,1),0,0));
 		paneadd(l);
 		l = new BlackLabel("Website: http://mulged.sourceforge.net");
