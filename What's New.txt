@@ -1,0 +1,234 @@
+This file is part of MulgEd - The Mulg game and level editor.
+Copyright (C) 1999-2003 Ilan Tayary, a.k.a. [NoCt]Yonatanz
+Website: http://mulged.sourceforge.net
+Contact: yonatanz at actcom.co.il (I do not like SPAM)
+
+MulgEd is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+MulgEd is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MulgEd, in a file named COPYING; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+What's new in MulgEd ?
+----------------------
+
+Version 2.2 (March 2003):
+- Released the sources under the terms of GNU General Public LIcense
+- Sources and binaries now avilable as OpenSource project on SourceForge.net
+- Added a "Loading..." dialog while loading everything
+
+Version 2.1 (November 2000):
+- Support for the new "LevN" game files of Mulg IIn
+- Added support for the new tiles introduced in Mulg IIn:
+	* Hanoi towers (3 tiles in the tileset)
+	* Walkers (4 tiles in the tileset)
+	* Exchange (1 tile in the tileset)
+	* Magnets (2 tiles in the tileset)
+- Tiles.h and Level.h of Mulg IIn also updated
+- I've added an FAQ part to the ReadMe file
+- The cursor's shape is better when connecting tiles
+	
+Version 2.01 (July 2000):
+- Bug fix: Game name and Author name sometimes were not read correctly by the 
+  application.
+- Fix: Tile help for one-ways had a typeo.
+- I have included tiles.h and level.h from MulgIIh, so .LEV files import and export
+  will work correctly.
+- Bug fix: on exported .LEV files, a vertical open door was exported as a horizontal
+  open door.
+- "Thank you"s for the bug reports must go to :
+  * Rick Lastrapes
+  * David K. Z. Harris
+  * Gregory A. Gaub
+
+Version 2.0 (May 2000):
+- Happy birthday to MulgEd ! One year has passed since the first release !
+- MulgEd just got platform independent (no MS-extentions).
+- Bugfixes :
+  - A level-drag lock after double-clicking on a level.
+  - Editing a note in game editor did not update the note in the file.
+- Improved the tile drawing functions. You'll notice that when you draw
+  tiles, the program reacts much faster.
+- Added the level coordinates in the status bar when moving with your mouse 
+  over the level drawing board.
+- All level and note actions are now in the menu only. There is no context-menu
+  on the level and note lists.
+- Parachute time is now limited to 60 seconds even though Mulg allows up to 127.
+
+Version 1.5j Preview 3 (March 2000):
+- Level re-ordering (drag-drop) is back and working.
+- Game analysis dialog now gives you data about the whole game.
+- Game file version sensitivity. For now only in game analysis. I'll embed 
+  this feature in open/save sometime (levL vs. levF).
+- Bug fix: Adding a level now causes it to be selected.
+- Bug fix: Installing an empty game used to launch windows explorer.
+- A what's new menu item (Help menu) shows this file.
+- Connection of distant tiles by dragging the connection beyond the level 
+  drawing board, thus causing it to scroll (Yes! This feature's here at last).
+- Full support for the advanced Mulg IIh databases, with up to 256 levels and 
+  up to 256 notes.
+- Added a progress bar to the game editor for feedback on loading and saving 
+  games, tiles, etc.
+- Better error messages when importing bad .LEV files. Also better error
+  handling.
+
+Version 1.5j Preview 2 (March 2000):
+- Support for four new "memo cube" tiles.
+- You can now work with the Mulg color tiles (for the Palm IIIc).
+- New tiles: icy reverser/un-reverser, box-in-place reverser/unreverser.
+- Included palm installation of game files right from MulgEd (Game menu).
+- Bug fix: Exporting games with scarab beatles and light boxes was throwing
+  an exception.
+
+Version 1.5j Preview 1 (February 2000):
+- Re-programmed all of MulgEd in Java (with micro$oft extentions, sorry), as 
+  a step towards platform independance.
+- The level editor now shows "problems" in addition to general data, 
+  along with the explanations.
+- Undo-Redo in level editor (up to 50 steps back).
+- Ability to add a note while working on connections.
+- Fixed a lot of tiles' names to fit the names given by Mulg's authors.
+- Fixed descending floors from x1..x4 to x0..x3.
+- New editors for special tiles: 
+  - Tiles that lie below others (scarab beatles, boxes).
+  - Flip tiles: x and y channels (formerly known as B/W tiles).
+  - Parachute time.
+- All actions on levels and notes are performed by right-clicking on the lists.
+- The level list also accepts keyboard input: Ins, Del, Enter, and arrow keys.
+- Game import/export of .LEV files is now working. Just make sure you have the 
+  included .h files in the same directory as the .LEV file when importing.
+- Connection to the game-of-life channel is now easy. Right click on a channel 
+  activator tile while working on connections, then connect to other tiles.
+- Now supports up to 32 levels (for Mulg IIg and later).
+- Old MulgEd game files are now detected and their dates are "n/a".
+
+Version 1.5 Beta (January 2000):
+- BIG version will be the standard from now on. Sorry, you wimpy 
+  640x480 users ... buy a newer graphics card ;)
+  The required size is about 650x500 to be exact.
+- "Level properties" combined dialog instead of name and dimensions 
+  dialogs (future level properties will be included here).
+- Support for the new tiles by Pat E. Kane : 
+  Light box, Switch space, Scarab beatle.
+- Fixed tiles names and help texts.
+- Fixed bug in level info - channel 0 was giving garbage results.
+- Unfortunately, a 2D windows accelerator VGA card is required for 
+  MulgEd. If you don't have such a card, editing mode other than 30x27
+  will look distorted. This is due to the use of StretchBlt operation.
+  As far as i know those cards are popular for years so hardly anyone
+  will have a problem.
+- Tiles are now divided to three tilesets. Standard, Additional and 
+  Groove/Rampart to allow more tiles to fit in MulgEd.
+- MulgEd now uses the Windows Registry to include an option to edit .
+  Mulg games by right-clicking on their names, and always comes back
+  to the directory you left it at. Also auto-install of this feature 
+  is now implemented.
+- Added those tiles you always waited for : 
+  Heavy box in place, Light box in place, Un-reverser (!).
+  4 types of descending floors (for x1..x4 passes).
+- While browsing files, you can see the game name and number of levels.
+- Creation time and modification time and count are now stored 
+  correctly in the files, and are shown on the game editor screen.
+  (old MulgEd created files will show either 21.10.2022,5:33:38 or 
+   4.2.99:16:14:23)   :o
+- Author name can only be changed in a newly created game. Also, a
+  a game cannot be saved without an author name.
+
+Version 1.41 (November 1999):
+- Special BIG version of the level editor.
+  This will not fit in a 640x480 screen, and will fill almost the 
+  whole 800x600 screen, but it lets you edit 30x27 tiles at once.
+- Fixed bug : when marks are shown, drawing tiles does not erase the 
+  marks now.
+
+Version 1.4 (November 1999):
+- Umbrella timing (work with connections).
+- Debug games (games that allow you to play all levels).
+  These games will have (D) added to their names on the Palm.
+- Level re-ordering using drag and drop.
+- Better .PDB header manipulation
+- Auto install does not open a DOS box now.
+- No VCL version of MulgEd. Only the regular version is available 
+  from now on.
+- A what's new file is attached to each new version.
+- Marking of edge tiles for ease of editing of medium and large levels.
+- Even more minor bug fixes.
+
+Version 1.3 (October 1999):
+- Fixed tunnel and platform tileset bug.
+- Wrap around test.
+- New tile : Oil stain.
+- No black color for connection circles.
+- Quick image loading (images are included in the EXE file).
+- Fixed auto-install for files.
+- Major bug fixes.
+
+Version 1.2 (August 1999):
+- New intuitive way of connecting tiles that work together.
+- Intuitive note connection.
+- Level integrity checking.
+- More bug fixes.
+- No need for Delphi's VCLs - bigger EXE file that runs on all 
+  computers.
+- help pages for the tiles and editors.
+
+Version 1.1 (June 1999): 
+Never released
+
+Version 1.0 (April 1999):
+- Lots of bug fixes.
+- New tiles included : Reverser, Active storm, Floor switch, 
+  Opened gates, Movable box, Starting point.
+- Change aware program
+
+Version 0.99 (April 1999):
+- First release into the outside world.
+
+
+Things that are yet to be fixed and added:
+------------------------------------------
+- Parachute time up to 127.
+- 4 Tiles of scarab beatles in all directions, and all Hanoi tower tiles (total of 7)
+  This will require a new tileset. What a joy !  ;)
+- Level editor drawing functionality using keyboard
+- Better level editing: Selections, Copy-Cut-Paste, etc.
+
+
+Credits:
+--------
+MulgEd was written by:
+	Ilan Tayary (yonatanz@actcom.co.il)
+
+	MulgEd Website: http://mulged.sourceforge.net
+
+Mulg II was written by:
+	Till Harbaum (palm@harbaum.org)
+	Pat E. Kane (pat@prairienet.org)
+
+	Mulg II Website: http://www.harbaum.org/till/palm/mulg
+
+Mulg II Tiles guide:
+	David K. Z. Harris (mulgtileguide@jeffk.com)
+
+	Tiles guide URL: http://www.jeffk.com/~zonker/palm/mulg-tile-guide.html
+
+
+Get your tilt sensor today !!! 
+It's virtual reality in your palm.
+
+
+Comments and feedback on MulgEd will be gladly received at :
+
+yonatanz@actcom.co.il
+
+Feel free to write me about MulgEd
+
